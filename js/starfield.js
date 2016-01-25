@@ -1,20 +1,21 @@
 $('document').ready(function(){
-  var container = document.getElementById('container');
+  var container = document.getElementById('starfield');
   var starfield = new Starfield();
   starfield.initialize(container);
   starfield.start();
+
 
 });
 
 
 function Starfield(){
-  this.fps = 30;
+  this.fps = 60;
   this.canvas = null;
   this.width = 0;
   this.height = 0;
   this.minVelocity = 15;
   this.maxVelocity = 30;
-  this.stars = 100;
+  this.stars = 200;
   this.intervalId = 0;
 };
 
